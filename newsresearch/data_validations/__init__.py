@@ -1,6 +1,6 @@
 from . import *
 from .SimpleListValidator import *
-from .MultipleRegExChecker import *
+from .MultipleListValidator import *
 
 __all__ = ["SimpleListValidator",
-           "MultipleRegExChecker"]
+           "MultipleListValidator"]

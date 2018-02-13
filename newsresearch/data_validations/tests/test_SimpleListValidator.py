@@ -1,5 +1,4 @@
 import unittest
-
 from newsresearch.data_validations import SimpleListValidator
 
 
