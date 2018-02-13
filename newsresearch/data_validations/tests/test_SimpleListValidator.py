@@ -11,5 +11,12 @@ class TestSimpleListValidator(unittest.TestCase):
         includer = SimpleListValidator("\w", False)
         self.assertEqual(includer.process_list(string_list), expected_output)
 
+    def test_excluder(self):
+        string_list = ["abcd", "  ", "", "qwerty"]
+        expected_output = ["abcd", "  ", ""]
+        includer = SimpleListValidator("qwer")
+        self.assertEqual(includer.process_list(string_list), expected_output)
+
+
 if __name__ == '__main__':
     unittest.main()
