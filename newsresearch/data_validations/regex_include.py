@@ -3,7 +3,9 @@ import re
 
 
 class RegexInclude(GenericStringValidator):
-
+    ''' Process a string list and include only that objects which matches a regular
+        expression
+    '''
     def __init__(self, expression, excluder=True):
         self.validator = re.compile(expression)
 
