@@ -3,7 +3,8 @@ import re
 
 
 class RegexExclude(GenericStringValidator):
-
+    ''' Process a string list and exclude that objects which matches a regular expression
+    '''
     def __init__(self, expression, excluder=True):
         self.validator = re.compile(expression)
 
