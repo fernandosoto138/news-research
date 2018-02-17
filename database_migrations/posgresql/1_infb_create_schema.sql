@@ -1,1 +1,1 @@
-CREATE SCHEMA ifnb;
+CREATE SCHEMA infb;
